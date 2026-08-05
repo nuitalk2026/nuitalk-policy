@@ -3,8 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>AKI電脳応用合同会社 | AKI Cyber Applications LLC</title>
-  <meta name="description" content="AKI電脳応用合同会社は、スマートフォンアプリケーション及びWebサービスの企画、開発、運営を行う会社です。">
+
+  <meta
+    name="description"
+    content="AKI電脳応用合同会社は、スマートフォンアプリケーション及びWebサービスの企画、開発、運営を行う会社です。ぬいとーく、前世カメラ（Zense Camera）を開発・運営しています。"
+  />
+
   <style>
     :root {
       --bg: #f7f8fb;
@@ -20,19 +26,31 @@
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "Hiragino Sans",
+        "Hiragino Kaku Gothic ProN",
+        "Yu Gothic",
+        Meiryo,
+        sans-serif;
       background: var(--bg);
       color: var(--text);
       line-height: 1.8;
     }
 
     header {
-      background: linear-gradient(135deg, #1e3a8a, #2563eb);
-      color: #ffffff;
       padding: 72px 20px;
+      color: #ffffff;
       text-align: center;
+      background: linear-gradient(135deg, #1e3a8a, #2563eb);
     }
 
     header h1 {
@@ -42,36 +60,36 @@
     }
 
     header p {
-      margin: 16px auto 0;
       max-width: 720px;
+      margin: 16px auto 0;
       font-size: 18px;
       opacity: 0.95;
     }
 
     nav {
-      background: #ffffff;
-      border-bottom: 1px solid var(--line);
       position: sticky;
       top: 0;
       z-index: 10;
+      background: #ffffff;
+      border-bottom: 1px solid var(--line);
     }
 
     nav ul {
-      margin: 0 auto;
-      padding: 0 20px;
-      max-width: 1040px;
       display: flex;
       gap: 24px;
-      list-style: none;
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 0 20px;
       overflow-x: auto;
+      list-style: none;
     }
 
     nav a {
       display: block;
       padding: 14px 0;
       color: var(--text);
-      text-decoration: none;
       font-weight: 600;
+      text-decoration: none;
       white-space: nowrap;
     }
 
@@ -86,19 +104,19 @@
     }
 
     section {
+      margin-bottom: 24px;
+      padding: 32px;
       background: var(--card);
       border: 1px solid var(--line);
       border-radius: 16px;
-      padding: 32px;
-      margin-bottom: 24px;
       box-shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
     }
 
     h2 {
       margin: 0 0 18px;
+      padding-left: 14px;
       font-size: 26px;
       border-left: 5px solid var(--accent);
-      padding-left: 14px;
     }
 
     h3 {
@@ -111,51 +129,68 @@
     }
 
     .lead {
-      font-size: 18px;
       color: var(--text);
+      font-size: 18px;
     }
 
     .service-card {
-      border: 1px solid var(--line);
-      border-radius: 14px;
       padding: 24px;
       background: #fafafa;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+    }
+
+    .service-card + .service-card {
+      margin-top: 20px;
     }
 
     .service-name {
+      margin-bottom: 8px;
       font-size: 24px;
       font-weight: 700;
-      margin-bottom: 8px;
+    }
+
+    .service-name-en {
+      margin-left: 6px;
+      color: var(--muted);
+      font-size: 16px;
+      font-weight: 600;
     }
 
     .badge {
       display: inline-block;
-      background: #dbeafe;
-      color: #1e40af;
-      border-radius: 999px;
+      margin-bottom: 14px;
       padding: 4px 12px;
+      color: #1e40af;
       font-size: 13px;
       font-weight: 700;
-      margin-bottom: 14px;
+      background: #dbeafe;
+      border-radius: 999px;
+    }
+
+    .badge.zense {
+      color: #5b3287;
+      background: #eee4fa;
     }
 
     ul {
-      padding-left: 1.2em;
       margin-bottom: 0;
+      padding-left: 1.2em;
     }
 
     table {
       width: 100%;
-      border-collapse: collapse;
       margin-top: 12px;
       background: #ffffff;
+      border-collapse: collapse;
     }
 
-    th, td {
-      border-bottom: 1px solid var(--line);
+    th,
+    td {
       padding: 14px 10px;
       text-align: left;
       vertical-align: top;
+      border-bottom: 1px solid var(--line);
     }
 
     th {
@@ -178,11 +213,11 @@
     .button {
       display: inline-block;
       padding: 10px 18px;
-      border-radius: 999px;
-      background: var(--accent);
       color: #ffffff;
-      text-decoration: none;
       font-weight: 700;
+      text-decoration: none;
+      background: var(--accent);
+      border-radius: 999px;
     }
 
     .button:hover {
@@ -193,12 +228,34 @@
       background: #111827;
     }
 
+    .button.secondary:hover {
+      background: #374151;
+    }
+
+    .button.zense {
+      background: #7450a8;
+    }
+
+    .button.zense:hover {
+      background: #5d3e8b;
+    }
+
+    .button.zense-secondary {
+      color: #5d3e8b;
+      background: #eee4fa;
+      border: 1px solid #d7c3ed;
+    }
+
+    .button.zense-secondary:hover {
+      background: #e2d2f4;
+    }
+
     footer {
-      text-align: center;
       padding: 32px 20px;
       color: var(--muted);
-      border-top: 1px solid var(--line);
+      text-align: center;
       background: #ffffff;
+      border-top: 1px solid var(--line);
     }
 
     @media (max-width: 640px) {
@@ -206,7 +263,8 @@
         padding: 24px 18px;
       }
 
-      th, td {
+      th,
+      td {
         display: block;
         width: 100%;
         padding: 10px 0;
@@ -219,6 +277,11 @@
       td {
         padding-bottom: 16px;
       }
+
+      .service-name-en {
+        display: block;
+        margin: 2px 0 0;
+      }
     }
   </style>
 </head>
@@ -226,10 +289,12 @@
 <body>
   <header>
     <h1>AKI電脳応用合同会社</h1>
-    <p>スマートフォンアプリケーション及びWebサービスの企画・開発・運営</p>
+    <p>
+      スマートフォンアプリケーション及びWebサービスの企画・開発・運営
+    </p>
   </header>
 
-  <nav>
+  <nav aria-label="メインナビゲーション">
     <ul>
       <li><a href="#about">会社概要</a></li>
       <li><a href="#business">事業内容</a></li>
@@ -241,11 +306,16 @@
   <main>
     <section id="about">
       <h2>会社概要</h2>
+
       <p class="lead">
-        AKI電脳応用合同会社は、スマートフォンアプリケーション及びWebサービスの企画、開発、運営を行う会社です。
+        AKI電脳応用合同会社は、スマートフォンアプリケーション及び
+        Webサービスの企画、開発、運営を行う会社です。
       </p>
+
       <p>
-        当社は、AI・音声認識・音声合成技術を活用したスマートフォンアプリケーション「ぬいとーく」を開発・運営しています。
+        当社は、AI・音声認識・音声合成技術を活用した会話アプリ
+        「ぬいとーく」や、撮影した対象の前世を診断する娯楽アプリ
+        「前世カメラ（Zense Camera）」を開発・運営しています。
       </p>
 
       <table>
@@ -253,34 +323,48 @@
           <th>会社名</th>
           <td>AKI電脳応用合同会社</td>
         </tr>
+
         <tr>
           <th>英名</th>
           <td>AKI Cyber Applications LLC</td>
         </tr>
+
         <tr>
           <th>所在地</th>
           <td>神奈川県藤沢市湘南台3丁目29番地14号</td>
         </tr>
+
         <tr>
           <th>設立</th>
           <td>2026年6月</td>
         </tr>
+
         <tr>
           <th>事業内容</th>
-          <td>スマートフォンアプリケーション及びWebサービスの企画、開発、運営</td>
+          <td>
+            スマートフォンアプリケーション及びWebサービスの企画、開発、運営
+          </td>
         </tr>
+
         <tr>
           <th>お問い合わせ</th>
-          <td><a href="mailto:support@nuitalk.tokyo">support@nuitalk.tokyo</a></td>
+          <td>
+            <a href="mailto:support@nuitalk.tokyo">
+              support@nuitalk.tokyo
+            </a>
+          </td>
         </tr>
       </table>
     </section>
 
     <section id="business">
       <h2>事業内容</h2>
+
       <p>
-        当社は、スマートフォンアプリケーション及びWebサービスを中心に、企画、開発、運営を行っています。
+        当社は、スマートフォンアプリケーション及びWebサービスを中心に、
+        企画、開発、運営を行っています。
       </p>
+
       <ul>
         <li>スマートフォンアプリケーションの企画、開発、運営</li>
         <li>Webサービスの企画、開発、運営</li>
@@ -291,47 +375,148 @@
     <section id="service">
       <h2>運営サービス</h2>
 
-      <div class="service-card">
+      <!-- ぬいとーく -->
+      <article class="service-card">
         <div class="badge">スマートフォンアプリ</div>
-        <div class="service-name">ぬいとーく</div>
+
+        <div class="service-name">
+          ぬいとーく
+          <span class="service-name-en">NuiTalk</span>
+        </div>
+
         <p>
-          ぬいとーくは、ぬいぐるみ等の身近な対象と会話しているような体験を提供するスマートフォンアプリです。
+          ぬいとーくは、ぬいぐるみ等の身近な対象と会話しているような
+          体験を提供するスマートフォンアプリです。
         </p>
+
         <p>
-          ユーザーの音声入力をもとにAIが応答を生成し、音声合成によってリアルタイムに近い会話体験を提供します。
+          ユーザーの音声入力をもとにAIが応答を生成し、
+          音声合成によってリアルタイムに近い会話体験を提供します。
         </p>
+
         <p>
-          本アプリは、広告表示及びアプリ内課金によるサブスクリプションを通じて運営しています。
+          本アプリは、広告表示及びアプリ内課金による
+          サブスクリプションを通じて運営しています。
         </p>
 
         <div class="button-row">
-          <a class="button" href="https://apps.apple.com/jp/app/%E3%81%AC%E3%81%84%E3%81%A8%E3%83%BC%E3%81%8F/id6761848434" target="_blank" rel="noopener">App Store</a>
-          <a class="button secondary" href="https://play.google.com/store/apps/details?id=com.nuitalk.app&hl=ja" target="_blank" rel="noopener">Google Play</a>
+          <a
+            class="button"
+            href="https://apps.apple.com/jp/app/%E3%81%AC%E3%81%84%E3%81%A8%E3%83%BC%E3%81%8F/id6761848434"
+            target="_blank"
+            rel="noopener"
+          >
+            App Store
+          </a>
+
+          <a
+            class="button secondary"
+            href="https://play.google.com/store/apps/details?id=com.nuitalk.app&amp;hl=ja"
+            target="_blank"
+            rel="noopener"
+          >
+            Google Play
+          </a>
         </div>
-      </div>
+      </article>
+
+      <!-- 前世カメラ -->
+      <article class="service-card">
+        <div class="badge zense">スマートフォンアプリ</div>
+
+        <div class="service-name">
+          前世カメラ
+          <span class="service-name-en">Zense Camera</span>
+        </div>
+
+        <p>
+          前世カメラは、カメラで撮影した写真または端末から選択した画像をもとに、
+          写っている人物や物の「前世」をカード形式で表示する娯楽アプリです。
+        </p>
+
+        <p>
+          診断結果には、前世の名称、説明、相性の良い前世、
+          ライバルとなる前世などが表示されます。
+          発見した前世カードは、アプリ内のアルバムで確認できます。
+        </p>
+
+        <p>
+          診断に使用する画像や顔検出結果は端末内で処理され、
+          当社のサーバーへ送信されません。
+          診断結果は娯楽を目的とした演出であり、
+          正確性を保証するものではありません。
+        </p>
+
+        <div class="button-row">
+          <a
+            class="button zense"
+            href="/zense-camera/privacy"
+          >
+            プライバシーポリシー
+          </a>
+
+          <a
+            class="button zense-secondary"
+            href="/zense-camera/support"
+          >
+            サポート
+          </a>
+        </div>
+      </article>
     </section>
 
     <section id="contact">
       <h2>お問い合わせ</h2>
+
       <p>
-        当社及び運営サービスに関するお問い合わせは、以下のメールアドレスまでお願いいたします。
+        当社及び運営サービスに関するお問い合わせは、
+        以下のメールアドレスまでお願いいたします。
       </p>
+
       <p>
-        <strong><a href="mailto:support@nuitalk.tokyo">support@nuitalk.tokyo</a></strong>
+        <strong>
+          <a href="mailto:support@nuitalk.tokyo">
+            support@nuitalk.tokyo
+          </a>
+        </strong>
       </p>
     </section>
 
     <section>
       <h2>関連リンク</h2>
+
       <ul>
-        <li><a href="/privacy.html">プライバシーポリシー</a></li>
-        <li><a href="/app-ads.txt">app-ads.txt</a></li>
+        <li>
+          <a href="/privacy.html">
+            ぬいとーく プライバシーポリシー
+          </a>
+        </li>
+
+        <li>
+          <a href="/zense-camera/privacy">
+            前世カメラ プライバシーポリシー
+          </a>
+        </li>
+
+        <li>
+          <a href="/zense-camera/support">
+            前世カメラ サポート
+          </a>
+        </li>
+
+        <li>
+          <a href="/app-ads.txt">
+            app-ads.txt
+          </a>
+        </li>
       </ul>
     </section>
   </main>
 
   <footer>
-    <small>© 2026 AKI電脳応用合同会社 / AKI Cyber Applications LLC</small>
+    <small>
+      © 2026 AKI電脳応用合同会社 / AKI Cyber Applications LLC
+    </small>
   </footer>
 </body>
 </html>
