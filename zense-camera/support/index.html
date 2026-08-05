@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>前世カメラ サポート | Zense Camera Support</title>
+
+  <meta
+    name="description"
+    content="前世カメラ（Zense Camera）のサポートページです。お問い合わせ先、よくあるご質問、プライバシーポリシーをご案内します。"
+  >
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: #333;
+      background: #f7f5fb;
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "Hiragino Kaku Gothic ProN",
+        "Hiragino Sans",
+        "Yu Gothic",
+        Meiryo,
+        sans-serif;
+      line-height: 1.8;
+    }
+
+    a {
+      color: #6546a8;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    a:hover {
+      text-decoration-thickness: 2px;
+    }
+
+    .page-container {
+      width: min(920px, calc(100% - 32px));
+      margin: 40px auto;
+    }
+
+    .page-header {
+      padding: 44px 32px;
+      color: #fff;
+      text-align: center;
+      background:
+        linear-gradient(
+          135deg,
+          #7155ad,
+          #9877c7
+        );
+      border-radius: 18px 18px 0 0;
+    }
+
+    .page-header h1 {
+      margin: 0;
+      font-size: clamp(1.8rem, 5vw, 2.6rem);
+      line-height: 1.4;
+    }
+
+    .page-header p {
+      margin: 10px 0 0;
+      opacity: 0.92;
+    }
+
+    .language-nav {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      padding: 18px;
+      background: #fff;
+      border-bottom: 1px solid #e7e1f0;
+    }
+
+    .language-nav a {
+      display: inline-block;
+      padding: 7px 18px;
+      color: #6546a8;
+      font-weight: 700;
+      text-decoration: none;
+      background: #f1ebfa;
+      border: 1px solid #d9caec;
+      border-radius: 999px;
+    }
+
+    .language-nav a:hover {
+      background: #e7dcf6;
+    }
+
+    main {
+      padding: 10px 40px 48px;
+      background: #fff;
+      border-radius: 0 0 18px 18px;
+      box-shadow: 0 8px 30px rgba(72, 50, 105, 0.09);
+    }
+
+    .language-section {
+      padding-top: 34px;
+    }
+
+    .language-section + .language-section {
+      margin-top: 58px;
+      padding-top: 58px;
+      border-top: 3px solid #eee8f5;
+    }
+
+    h2 {
+      margin: 0 0 22px;
+      padding-bottom: 12px;
+      color: #513987;
+      font-size: 1.75rem;
+      border-bottom: 2px solid #d8c9eb;
+    }
+
+    h3 {
+      margin: 38px 0 16px;
+      color: #5e438f;
+      font-size: 1.3rem;
+    }
+
+    p {
+      margin: 0 0 18px;
+    }
+
+    ul {
+      margin: 12px 0 22px;
+      padding-left: 1.5em;
+    }
+
+    li + li {
+      margin-top: 5px;
+    }
+
+    .contact-card,
+    .app-info,
+    .notice,
+    .privacy-card {
+      margin: 20px 0;
+      padding: 22px 24px;
+      border-radius: 12px;
+    }
+
+    .contact-card,
+    .app-info {
+      background: #f8f5fc;
+      border: 1px solid #dfd3ee;
+    }
+
+    .contact-card dl,
+    .app-info dl {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: 8px 18px;
+      margin: 0;
+    }
+
+    dt {
+      font-weight: 700;
+      color: #513987;
+    }
+
+    dd {
+      margin: 0;
+      overflow-wrap: anywhere;
+    }
+
+    .notice {
+      color: #574627;
+      background: #fff8e6;
+      border-left: 5px solid #d9a929;
+    }
+
+    .privacy-card {
+      background: #f1f7f3;
+      border: 1px solid #cce1d2;
+    }
+
+    .privacy-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .settings-path {
+      margin: 14px 0 4px;
+      padding: 12px 16px;
+      overflow-wrap: anywhere;
+      color: #493275;
+      font-weight: 700;
+      background: #f1ebfa;
+      border-radius: 8px;
+    }
+
+    .faq-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    details {
+      padding: 0 20px;
+      background: #faf9fc;
+      border: 1px solid #ded7e8;
+      border-radius: 10px;
+    }
+
+    details[open] {
+      background: #fff;
+      border-color: #bda9d8;
+    }
+
+    summary {
+      padding: 17px 0;
+      color: #513987;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .faq-answer {
+      padding: 0 0 20px;
+    }
+
+    .faq-answer p:last-child {
+      margin-bottom: 0;
+    }
+
+    address {
+      font-style: normal;
+    }
+
+    .page-footer {
+      padding: 24px 16px;
+      color: #746b7d;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 640px) {
+      .page-container {
+        width: min(100% - 20px, 920px);
+        margin: 10px auto 24px;
+      }
+
+      .page-header {
+        padding: 34px 20px;
+      }
+
+      main {
+        padding: 8px 20px 36px;
+      }
+
+      .language-nav {
+        flex-wrap: wrap;
+      }
+
+      .contact-card dl,
+      .app-info dl {
+        display: block;
+      }
+
+      dt {
+        margin-top: 12px;
+      }
+
+      dt:first-child {
+        margin-top: 0;
+      }
+
+      dd {
+        margin-top: 2px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page-container">
+
+    <header class="page-header">
+      <h1>前世カメラ サポート</h1>
+      <p>Zense Camera Support</p>
+    </header>
+
+    <nav class="language-nav" aria-label="Language navigation">
+      <a href="#japanese">日本語</a>
+      <a href="#english">English</a>
+    </nav>
+
+    <main>
+
+      <!-- 日本語 -->
+      <section id="japanese" class="language-section" lang="ja">
+        <h2>前世カメラ サポート</h2>
+
+        <p>
+          「前世カメラ」をご利用いただき、ありがとうございます。
+        </p>
+
+        <p>
+          本アプリに関するご質問、不具合のご報告、ご意見・ご要望は、
+          以下のメールアドレスまでお問い合わせください。
+        </p>
+
+        <h3>お問い合わせ先</h3>
+
+        <address class="contact-card">
+          <dl>
+            <dt>提供者</dt>
+            <dd>AKI電脳応用合同会社</dd>
+
+            <dt>メール</dt>
+            <dd>
+              <a href="mailto:support@nuitalk.tokyo">
+                support@nuitalk.tokyo
+              </a>
+            </dd>
+
+            <dt>対応言語</dt>
+            <dd>日本語・英語</dd>
+          </dl>
+        </address>
+
+        <div class="notice">
+          <strong>ご案内：</strong>
+          お問い合わせ内容によっては、回答までにお時間をいただく場合があります。
+        </div>
+
+        <h3>お問い合わせ時に記載いただきたい内容</h3>
+
+        <p>
+          円滑な調査のため、可能な範囲で次の情報をお知らせください。
+        </p>
+
+        <ul>
+          <li>ご利用の端末名（例：iPhone 16）</li>
+          <li>iOSのバージョン</li>
+          <li>前世カメラのアプリバージョン</li>
+          <li>発生した問題の内容</li>
+          <li>問題が発生するまでの操作手順</li>
+          <li>表示されたエラーメッセージ</li>
+          <li>問題画面のスクリーンショット（任意）</li>
+        </ul>
+
+        <div class="notice">
+          診断に使用した顔写真、氏名、住所、電話番号、その他の個人情報は、
+          調査に必要な場合を除き、メールへ添付・記載しないでください。
+        </div>
+
+        <h3>よくあるご質問</h3>
+
+        <div class="faq-list">
+
+          <details>
+            <summary>カメラを利用できません</summary>
+            <div class="faq-answer">
+              <p>
+                iPhoneの「設定」アプリから、前世カメラに対するカメラへの
+                アクセスが許可されていることをご確認ください。
+              </p>
+
+              <div class="settings-path">
+                設定 → アプリ → 前世カメラ → カメラ
+              </div>
+            </div>
+          </details>
+
+          <details>
+            <summary>写真を選択できません</summary>
+            <div class="faq-answer">
+              <p>
+                iPhoneの「設定」アプリから、前世カメラに対する写真ライブラリへの
+                アクセスが許可されていることをご確認ください。
+              </p>
+
+              <div class="settings-path">
+                設定 → アプリ → 前世カメラ → 写真
+              </div>
+            </div>
+          </details>
+
+          <details>
+            <summary>保存された画像や診断履歴を削除したいです</summary>
+            <div class="faq-answer">
+              <p>
+                本アプリの「設定」画面から
+                「発見済みの前世データを削除」を選択してください。
+                保存された撮影画像、切り抜き画像および診断履歴が端末から削除されます。
+              </p>
+
+              <p>
+                アプリをアンインストールすることでも、
+                アプリ内に保存されたデータは削除されます。
+              </p>
+            </div>
+          </details>
+
+          <details>
+            <summary>写真は外部サーバーへ送信されますか</summary>
+            <div class="faq-answer">
+              <p>
+                診断に使用する画像および顔検出結果は端末内で処理され、
+                当社またはGoogleのサーバーへ送信されません。
+              </p>
+
+              <p>
+                ただし、本アプリが使用するGoogle ML Kitは、
+                性能測定や障害解析などのため、端末情報、アプリ情報、
+                利用状況およびエラー情報などのメトリクスを
+                Googleへ送信する場合があります。
+              </p>
+
+              <p>
+                詳しくは、
+                <a href="/zense-camera/privacy">
+                  プライバシーポリシー
+                </a>
+                をご確認ください。
+              </p>
+            </div>
+          </details>
+
+          <details>
+            <summary>SNS共有について</summary>
+            <div class="faq-answer">
+              <p>
+                共有ボタンを押した場合に限り、診断結果の文章または画像が、
+                利用者が選択したSNSやメッセージアプリへ渡されます。
+              </p>
+
+              <p>
+                共有後の情報は、各外部サービスのプライバシーポリシーに従って
+                取り扱われます。
+              </p>
+            </div>
+          </details>
+
+          <details>
+            <summary>診断結果について</summary>
+            <div class="faq-answer">
+              <p>
+                本アプリの診断結果は、娯楽を目的とした演出です。
+                診断結果の正確性、完全性または特定目的への適合性を
+                保証するものではありません。
+              </p>
+            </div>
+          </details>
+
+        </div>
+
+        <h3>プライバシーポリシー</h3>
+
+        <div class="privacy-card">
+          <p>
+            利用者情報の取扱いについては、以下をご確認ください。
+          </p>
+
+          <p>
+            <a href="/zense-camera/privacy">
+              前世カメラ プライバシーポリシー
+            </a>
+          </p>
+        </div>
+
+        <h3>アプリ情報</h3>
+
+        <div class="app-info">
+          <dl>
+            <dt>アプリ名</dt>
+            <dd>前世カメラ／Zense Camera</dd>
+
+            <dt>提供者</dt>
+            <dd>AKI電脳応用合同会社</dd>
+
+            <dt>所在地</dt>
+            <dd>神奈川県藤沢市湘南台3－29－14</dd>
+
+            <dt>メール</dt>
+            <dd>
+              <a href="mailto:support@nuitalk.tokyo">
+                support@nuitalk.tokyo
+              </a>
+            </dd>
+
+            <dt>最終更新日</dt>
+            <dd>2026年8月6日</dd>
+          </dl>
+        </div>
+      </section>
+
+      <!-- English -->
+      <section id="english" class="language-section" lang="en">
+        <h2>Zense Camera Support</h2>
+
+        <p>
+          Thank you for using Zense Camera.
+        </p>
+
+        <p>
+          For questions, bug reports, feedback, or feature requests,
+          please contact us using the email address below.
+        </p>
+
+        <h3>Contact</h3>
+
+        <address class="contact-card">
+          <dl>
+            <dt>Provider</dt>
+            <dd>AKI Cyber Applications LLC</dd>
+
+            <dt>Email</dt>
+            <dd>
+              <a href="mailto:support@nuitalk.tokyo">
+                support@nuitalk.tokyo
+              </a>
+            </dd>
+
+            <dt>Supported languages</dt>
+            <dd>Japanese and English</dd>
+          </dl>
+        </address>
+
+        <div class="notice">
+          <strong>Please note:</strong>
+          Responses may take longer depending on the nature of the inquiry.
+        </div>
+
+        <h3>Information to Include</h3>
+
+        <p>
+          To help us investigate your inquiry, please include the following
+          information when possible:
+        </p>
+
+        <ul>
+          <li>Device model</li>
+          <li>iOS version</li>
+          <li>Zense Camera app version</li>
+          <li>Description of the issue</li>
+          <li>Steps that caused the issue</li>
+          <li>Any displayed error message</li>
+          <li>A screenshot of the issue, if applicable</li>
+        </ul>
+
+        <div class="notice">
+          Please do not attach photos used for diagnosis or include your name,
+          address, phone number, or other personal information unless it is
+          necessary for investigating the issue.
+        </div>
+
+        <h3>Frequently Asked Questions</h3>
+
+        <div class="faq-list">
+
+          <details>
+            <summary>The camera is unavailable</summary>
+            <div class="faq-answer">
+              <p>
+                Open the iPhone Settings app and confirm that camera access
+                is enabled for Zense Camera.
+              </p>
+
+              <div class="settings-path">
+                Settings → Apps → Zense Camera → Camera
+              </div>
+            </div>
+          </details>
+
+          <details>
+            <summary>I cannot select a photo</summary>
+            <div class="faq-answer">
+              <p>
+                Open the iPhone Settings app and confirm that photo library
+                access is enabled for Zense Camera.
+              </p>
+
+              <div class="settings-path">
+                Settings → Apps → Zense Camera → Photos
+              </div>
+            </div>
+          </details>
+
+          <details>
+            <summary>How can I delete saved images and diagnosis history?</summary>
+            <div class="faq-answer">
+              <p>
+                Open Settings in Zense Camera and select
+                “Delete Discovered Past Life Data.”
+                This deletes saved photos, cropped images, and diagnosis
+                history from the device.
+              </p>
+
+              <p>
+                Uninstalling the App also deletes data stored locally by the App.
+              </p>
+            </div>
+          </details>
+
+          <details>
+            <summary>Are diagnosis images uploaded to a server?</summary>
+            <div class="faq-answer">
+              <p>
+                Images used for diagnosis and face detection results are
+                processed on the device. They are not sent to our servers
+                or Google’s servers.
+              </p>
+
+              <p>
+                Google ML Kit may transmit device information, app information,
+                usage metrics, performance data, and error information to Google
+                for performance measurement and troubleshooting.
+              </p>
+
+              <p>
+                Please review our
+                <a href="/zense-camera/privacy">
+                  Privacy Policy
+                </a>
+                for details.
+              </p>
+            </div>
+          </details>
+
+          <details>
+            <summary>Sharing with social networks</summary>
+            <div class="faq-answer">
+              <p>
+                Diagnosis text or images are provided to a social network or
+                messaging app only when the user explicitly invokes the
+                sharing feature.
+              </p>
+
+              <p>
+                Information shared with an external service is handled according
+                to that service’s privacy policy.
+              </p>
+            </div>
+          </details>
+
+          <details>
+            <summary>About diagnosis results</summary>
+            <div class="faq-answer">
+              <p>
+                The diagnosis results provided by this App are intended solely
+                for entertainment. We do not guarantee their accuracy,
+                completeness, or fitness for any particular purpose.
+              </p>
+            </div>
+          </details>
+
+        </div>
+
+        <h3>Privacy Policy</h3>
+
+        <div class="privacy-card">
+          <p>
+            Please review the following page for information about how the App
+            handles user information:
+          </p>
+
+          <p>
+            <a href="/zense-camera/privacy">
+              Zense Camera Privacy Policy
+            </a>
+          </p>
+        </div>
+
+        <h3>App Information</h3>
+
+        <div class="app-info">
+          <dl>
+            <dt>App name</dt>
+            <dd>Zense Camera</dd>
+
+            <dt>Provider</dt>
+            <dd>AKI Cyber Applications LLC</dd>
+
+            <dt>Address</dt>
+            <dd>3-29-14 Shonandai, Fujisawa, Kanagawa, Japan</dd>
+
+            <dt>Email</dt>
+            <dd>
+              <a href="mailto:support@nuitalk.tokyo">
+                support@nuitalk.tokyo
+              </a>
+            </dd>
+
+            <dt>Last updated</dt>
+            <dd>August 6, 2026</dd>
+          </dl>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="page-footer">
+      &copy; 2026 AKI Cyber Applications LLC
+    </footer>
+
+  </div>
+</body>
+</html>
