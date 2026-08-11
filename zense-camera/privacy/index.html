@@ -1,126 +1,477 @@
-前世カメラ プライバシーポリシー
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-AKI電脳応用合同会社（以下「当社」といいます）は、当社が提供するアプリ「前世カメラ」（以下「本アプリ」といいます）における利用者情報の取扱いについて、以下のとおり定めます。
+  <title>前世カメラ / Zense Camera - Privacy Policy</title>
 
-制定日：2026年8月6日
-最終改定日：2026年8月6日
+  <style>
+    body {
+      margin: 0;
+      background: #f7f8fb;
+      color: #222;
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "Hiragino Kaku Gothic ProN",
+        "Hiragino Sans",
+        "Yu Gothic",
+        Meiryo,
+        sans-serif;
+      line-height: 1.8;
+    }
 
-1. 本アプリで取り扱う情報
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
 
-本アプリは、アカウント登録を必要とせず、利用者の氏名、住所、メールアドレス、電話番号、位置情報、連絡先をアプリ上で入力させたり、当社のサーバーへ送信したりしません。
+    .card {
+      background: #fff;
+      border: 1px solid #e3e6eb;
+      border-radius: 12px;
+      padding: 36px 40px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    }
 
-本アプリは、前世診断を提供するため、利用者がカメラで撮影した画像または写真ライブラリから選択した画像、画像から検出した顔の位置情報、および診断結果を取り扱います。
+    h1 {
+      margin-top: 0;
+      margin-bottom: 16px;
+      font-size: 2rem;
+      line-height: 1.4;
+    }
 
-2. 画像および顔検出データの取扱い
+    h2 {
+      margin-top: 40px;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid #e5e7eb;
+      font-size: 1.25rem;
+    }
 
-診断に使用する画像および顔検出結果は端末内で処理され、当社またはGoogleのサーバーへ送信されません。顔検出は画像内の顔の有無や位置を判定するために使用し、個人を特定する顔認識には使用しません。
+    p {
+      margin: 12px 0;
+    }
 
-診断が完了すると、撮影画像または選択画像のコピー、診断対象部分の切り抜き画像、および診断結果が、本アプリのアルバム・履歴機能のため端末内のアプリ専用領域へ自動的に保存される場合があります。これらを、利用者の操作なく当社が取得したり、外部の第三者へ共有したりすることはありません。
+    ul {
+      padding-left: 1.5em;
+      margin: 12px 0;
+    }
 
-3. 端末内に保存する情報と削除方法
+    li {
+      margin: 6px 0;
+    }
 
-本アプリは、画像、診断結果、診断履歴、言語設定その他の表示状態を、機能提供のため端末内へ保存します。これらは、利用者が本アプリの設定画面にある「発見済みの前世データを削除」を実行するか、本アプリをアンインストールするまで保存されます。
+    a {
+      color: #2563eb;
+      word-break: break-all;
+    }
 
-4. Google ML Kitによる外部送信
+    .date {
+      color: #666;
+      font-size: 0.95rem;
+      margin-top: 20px;
+    }
 
-本アプリは、端末内での顔検出にGoogle LLCが提供するGoogle ML Kitを利用しています。Google ML Kitは、診断画像および顔検出結果をGoogleへ送信しませんが、SDKの保守、性能測定、障害解析、利用状況の分析および不正利用の検出のため、次の情報をGoogleへ送信する場合があります。
+    .language-nav {
+      margin-bottom: 28px;
+      padding: 12px 16px;
+      background: #f1f4f8;
+      border-radius: 8px;
+    }
 
-・端末の機種、OSのバージョン、利用可能なハードウェア情報
-・本アプリのBundle IDおよびバージョン
-・個人または物理的な端末を一意に識別することを意図しないインストール単位の識別子
-・処理時間などの性能情報
-・画像形式、解像度などのAPI設定情報
-・機能の初期化、検出、終了などのイベント情報およびエラーコード
+    .language-nav a {
+      margin-right: 16px;
+      text-decoration: none;
+      font-weight: 600;
+    }
 
-Googleによる情報の取扱いについては、GoogleのプライバシーポリシーおよびGoogle ML Kitの「Terms & Privacy」をご確認ください。
-https://policies.google.com/privacy
-https://developers.google.com/ml-kit/terms
+    .language-section + .language-section {
+      margin-top: 64px;
+      padding-top: 48px;
+      border-top: 3px solid #e5e7eb;
+    }
 
-本アプリは、広告目的のトラッキングを行いません。当社は、本アプリに組み込む第三者サービスに対し、本ポリシーおよび適用法令に基づくものと同等の利用者情報の保護を求めます。
+    .company {
+      margin-top: 20px;
+      padding: 18px 20px;
+      background: #f8f9fb;
+      border-radius: 8px;
+    }
 
-5. 外部サービスへの共有
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px 12px 50px;
+      }
 
-利用者が本アプリの共有機能を実行した場合、診断結果の文章または画像が、利用者が選択したSNS、メッセージアプリその他の外部サービスへ送信されます。この共有は利用者自身の明示的な操作によって行われ、共有後の情報は各外部サービスのプライバシーポリシーに従って取り扱われます。
+      .card {
+        padding: 24px 18px;
+      }
 
-6. 権限の管理
+      h1 {
+        font-size: 1.6rem;
+      }
 
-カメラおよび写真ライブラリへのアクセスは、利用者が端末の設定から許可または取り消すことができます。権限を許可しない場合、該当する撮影または画像選択機能を利用できないことがあります。
+      h2 {
+        font-size: 1.15rem;
+      }
+    }
+  </style>
+</head>
 
-7. お問い合わせ情報
+<body>
 
-利用者がメール等で当社へお問い合わせを行った場合、当社は返信および対応のために、利用者のメールアドレスおよびお問い合わせ内容を利用します。これらは対応に必要な期間保管し、保管する必要がなくなった後、適切な方法で削除します。
+  <main class="container">
+    <div class="card">
 
-8. 本ポリシーの変更
-
-当社は、必要に応じて本ポリシーを変更することがあります。重要な変更がある場合は、本アプリ内または当社ウェブサイト上でお知らせします。
-
-9. 事業者情報
-
-AKI電脳応用合同会社
-
-お問い合わせ先：
-support@nuitalk.tokyo
+      <nav class="language-nav">
+        <a href="#ja">日本語</a>
+        <a href="#en">English</a>
+      </nav>
 
 
-Zense Camera Privacy Policy
+      <!-- 日本語 -->
+      <section id="ja" class="language-section">
 
-AKI Cyber Applications LLC ("we," "us," or "our") establishes this Privacy Policy regarding the handling of user information in the app "Zense Camera" ("the App") provided by us.
+        <h1>前世カメラ プライバシーポリシー</h1>
 
-Effective date: August 6, 2026
-Last updated: August 6, 2026
+        <p>
+          AKI電脳応用合同会社（以下「当社」といいます）は、
+          当社が提供するアプリ「前世カメラ」（以下「本アプリ」といいます）における
+          利用者情報の取扱いについて、以下のとおり定めます。
+        </p>
 
-1. Information Handled by the App
+        <div class="date">
+          制定日：2026年8月6日<br>
+          最終改定日：2026年8月6日
+        </div>
 
-The App does not require account registration and does not ask users to enter, or transmit to our servers, their name, address, email address, phone number, location information, or contacts.
 
-To provide its past life diagnosis feature, the App handles images captured with the camera or selected from the photo library, face location information detected in those images, and diagnosis results.
+        <h2>1. 本アプリで取り扱う情報</h2>
 
-2. Images and Face Detection Data
+        <p>
+          本アプリは、アカウント登録を必要とせず、利用者の氏名、住所、
+          メールアドレス、電話番号、位置情報、連絡先をアプリ上で入力させたり、
+          当社のサーバーへ送信したりしません。
+        </p>
 
-Images used for diagnosis and face detection results are processed on the device and are not sent to our servers or Google's servers. Face detection is used only to determine the presence and location of faces in an image and is not used for facial recognition or to identify individuals.
+        <p>
+          本アプリは、前世診断を提供するため、利用者がカメラで撮影した画像
+          または写真ライブラリから選択した画像、画像から検出した顔の位置情報、
+          および診断結果を取り扱います。
+        </p>
 
-After a diagnosis is completed, a copy of the captured or selected image, a cropped image of the diagnosis target, and the diagnosis result may be saved automatically in the App's private on-device storage for its album and history features. We do not obtain this locally stored information or share it with external third parties without the user's action.
 
-3. On-Device Storage and Deletion
+        <h2>2. 画像および顔検出データの取扱い</h2>
 
-The App stores images, diagnosis results, diagnosis history, language settings, and other display states on the device to provide its features. This information remains stored until the user selects "Delete Discovered Past Life Data" in the App's Settings screen or uninstalls the App.
+        <p>
+          診断に使用する画像および顔検出結果は端末内で処理され、
+          当社またはGoogleのサーバーへ送信されません。
+          顔検出は画像内の顔の有無や位置を判定するために使用し、
+          個人を特定する顔認識には使用しません。
+        </p>
 
-4. Data Transmitted by Google ML Kit
+        <p>
+          診断が完了すると、撮影画像または選択画像のコピー、
+          診断対象部分の切り抜き画像、および診断結果が、
+          本アプリのアルバム・履歴機能のため端末内のアプリ専用領域へ
+          自動的に保存される場合があります。
+          これらを、利用者の操作なく当社が取得したり、
+          外部の第三者へ共有したりすることはありません。
+        </p>
 
-The App uses Google ML Kit, provided by Google LLC, to perform face detection on the device. Google ML Kit does not send diagnosis images or face detection results to Google, but it may transmit the following information to Google for SDK maintenance, performance measurement, troubleshooting, usage analytics, and abuse detection:
 
-・Device model, operating system version, and available hardware information
-・The App's bundle ID and version
-・A per-installation identifier not intended to uniquely identify a person or physical device
-・Performance information such as processing latency
-・API configuration information such as image format and resolution
-・Feature events such as initialization, detection, and resource release, as well as error codes
+        <h2>3. 端末内に保存する情報と削除方法</h2>
 
-For information about Google's handling of this data, please review the Google Privacy Policy and Google ML Kit Terms & Privacy.
-https://policies.google.com/privacy
-https://developers.google.com/ml-kit/terms
+        <p>
+          本アプリは、画像、診断結果、診断履歴、言語設定その他の表示状態を、
+          機能提供のため端末内へ保存します。
+          これらは、利用者が本アプリの設定画面にある
+          「発見済みの前世データを削除」を実行するか、
+          本アプリをアンインストールするまで保存されます。
+        </p>
 
-The App does not perform tracking for advertising purposes. We require third-party services integrated into the App to protect user information to a level equivalent to that required by this Policy and applicable law.
+        <p>
+          前世アルバムおよび保存画像は端末内に保存されます。
+          本アプリ独自のクラウド同期・端末間データ移行機能はありません。
+          端末やOSのバックアップから復元される場合がありますが、
+          復元は保証されません。
+          アプリを削除した場合、データが失われることがあります。
+        </p>
 
-5. Sharing with External Services
 
-When a user invokes the App's sharing feature, diagnosis text or images are sent to the social network, messaging app, or other external service selected by the user. This sharing occurs only through the user's explicit action. After sharing, the information is handled in accordance with the privacy policy of the selected external service.
+        <h2>4. Google ML Kitによる外部送信</h2>
 
-6. Managing Permissions
+        <p>
+          本アプリは、端末内での顔検出にGoogle LLCが提供するGoogle ML Kitを利用しています。
+          Google ML Kitは、診断画像および顔検出結果をGoogleへ送信しませんが、
+          SDKの保守、性能測定、障害解析、利用状況の分析および不正利用の検出のため、
+          次の情報をGoogleへ送信する場合があります。
+        </p>
 
-Users can grant or revoke access to the camera and photo library through their device settings. If a permission is not granted, the corresponding camera or image selection feature may be unavailable.
+        <ul>
+          <li>端末の機種、OSのバージョン、利用可能なハードウェア情報</li>
+          <li>本アプリのBundle IDおよびバージョン</li>
+          <li>個人または物理的な端末を一意に識別することを意図しないインストール単位の識別子</li>
+          <li>処理時間などの性能情報</li>
+          <li>画像形式、解像度などのAPI設定情報</li>
+          <li>機能の初期化、検出、終了などのイベント情報およびエラーコード</li>
+        </ul>
 
-7. Contact Information
+        <p>
+          Googleによる情報の取扱いについては、
+          GoogleのプライバシーポリシーおよびGoogle ML Kitの「Terms &amp; Privacy」をご確認ください。
+        </p>
 
-If a user contacts us by email or another method, we use the user's email address and inquiry details only to respond to and handle the inquiry. We retain this information only as long as necessary to handle the inquiry and delete it appropriately when it is no longer needed.
+        <p>
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">
+            Google プライバシーポリシー
+          </a>
+          <br>
+          <a href="https://developers.google.com/ml-kit/terms" target="_blank" rel="noopener noreferrer">
+            Google ML Kit Terms &amp; Privacy
+          </a>
+        </p>
 
-8. Changes to This Policy
+        <p>
+          本アプリは、広告目的のトラッキングを行いません。
+          当社は、本アプリに組み込む第三者サービスに対し、
+          本ポリシーおよび適用法令に基づくものと同等の利用者情報の保護を求めます。
+        </p>
 
-We may update this Privacy Policy as necessary. If we make important changes, we will notify users within the App or on our website.
 
-9. Business Information
+        <h2>5. 外部サービスへの共有</h2>
 
-AKI Cyber Applications LLC
+        <p>
+          利用者が本アプリの共有機能を実行した場合、
+          診断結果の文章または画像が、利用者が選択したSNS、
+          メッセージアプリその他の外部サービスへ送信されます。
+          この共有は利用者自身の明示的な操作によって行われ、
+          共有後の情報は各外部サービスのプライバシーポリシーに従って取り扱われます。
+        </p>
 
-Contact:
-support@nuitalk.tokyo
+
+        <h2>6. 権限の管理</h2>
+
+        <p>
+          カメラおよび写真ライブラリへのアクセスは、
+          利用者が端末の設定から許可または取り消すことができます。
+          権限を許可しない場合、
+          該当する撮影または画像選択機能を利用できないことがあります。
+        </p>
+
+
+        <h2>7. お問い合わせ情報</h2>
+
+        <p>
+          利用者がメール等で当社へお問い合わせを行った場合、
+          当社は返信および対応のために、
+          利用者のメールアドレスおよびお問い合わせ内容を利用します。
+          これらは対応に必要な期間保管し、
+          保管する必要がなくなった後、適切な方法で削除します。
+        </p>
+
+
+        <h2>8. 本ポリシーの変更</h2>
+
+        <p>
+          当社は、必要に応じて本ポリシーを変更することがあります。
+          重要な変更がある場合は、
+          本アプリ内または当社ウェブサイト上でお知らせします。
+        </p>
+
+
+        <h2>9. 事業者情報</h2>
+
+        <div class="company">
+          <strong>AKI電脳応用合同会社</strong>
+
+          <p>
+            お問い合わせ先：<br>
+            <a href="mailto:support@nuitalk.tokyo">
+              support@nuitalk.tokyo
+            </a>
+          </p>
+        </div>
+
+      </section>
+
+
+      <!-- English -->
+      <section id="en" class="language-section" lang="en">
+
+        <h1>Zense Camera Privacy Policy</h1>
+
+        <p>
+          AKI Cyber Applications LLC ("we," "us," or "our") establishes this Privacy Policy
+          regarding the handling of user information in the app "Zense Camera"
+          ("the App") provided by us.
+        </p>
+
+        <div class="date">
+          Effective date: August 6, 2026<br>
+          Last updated: August 6, 2026
+        </div>
+
+
+        <h2>1. Information Handled by the App</h2>
+
+        <p>
+          The App does not require account registration and does not ask users to enter,
+          or transmit to our servers, their name, address, email address, phone number,
+          location information, or contacts.
+        </p>
+
+        <p>
+          To provide its past life diagnosis feature, the App handles images captured
+          with the camera or selected from the photo library, face location information
+          detected in those images, and diagnosis results.
+        </p>
+
+
+        <h2>2. Images and Face Detection Data</h2>
+
+        <p>
+          Images used for diagnosis and face detection results are processed on the device
+          and are not sent to our servers or Google's servers.
+          Face detection is used only to determine the presence and location of faces
+          in an image and is not used for facial recognition or to identify individuals.
+        </p>
+
+        <p>
+          After a diagnosis is completed, a copy of the captured or selected image,
+          a cropped image of the diagnosis target, and the diagnosis result may be saved
+          automatically in the App's private on-device storage for its album and history features.
+          We do not obtain this locally stored information or share it with external third parties
+          without the user's action.
+        </p>
+
+
+        <h2>3. On-Device Storage and Deletion</h2>
+
+        <p>
+          The App stores images, diagnosis results, diagnosis history, language settings,
+          and other display states on the device to provide its features.
+          This information remains stored until the user selects
+          "Delete Discovered Past Life Data" in the App's Settings screen
+          or uninstalls the App.
+        </p>
+
+        <p>
+          Past Life Album data and saved images are stored locally on your device.
+          This app does not provide its own cloud synchronization or data transfer feature
+          between devices. Your data may be restored from a device or operating system backup,
+          but restoration is not guaranteed. Uninstalling the app may result in the loss of your data.
+        </p>
+
+
+        <h2>4. Data Transmitted by Google ML Kit</h2>
+
+        <p>
+          The App uses Google ML Kit, provided by Google LLC,
+          to perform face detection on the device.
+          Google ML Kit does not send diagnosis images or face detection results to Google,
+          but it may transmit the following information to Google for SDK maintenance,
+          performance measurement, troubleshooting, usage analytics, and abuse detection:
+        </p>
+
+        <ul>
+          <li>Device model, operating system version, and available hardware information</li>
+          <li>The App's bundle ID and version</li>
+          <li>A per-installation identifier not intended to uniquely identify a person or physical device</li>
+          <li>Performance information such as processing latency</li>
+          <li>API configuration information such as image format and resolution</li>
+          <li>Feature events such as initialization, detection, and resource release, as well as error codes</li>
+        </ul>
+
+        <p>
+          For information about Google's handling of this data,
+          please review the Google Privacy Policy and Google ML Kit Terms &amp; Privacy.
+        </p>
+
+        <p>
+          <a href="https://policies.google.com/privacy"
+             target="_blank"
+             rel="noopener noreferrer">
+            Google Privacy Policy
+          </a>
+          <br>
+          <a href="https://developers.google.com/ml-kit/terms"
+             target="_blank"
+             rel="noopener noreferrer">
+            Google ML Kit Terms &amp; Privacy
+          </a>
+        </p>
+
+        <p>
+          The App does not perform tracking for advertising purposes.
+          We require third-party services integrated into the App to protect user information
+          to a level equivalent to that required by this Policy and applicable law.
+        </p>
+
+
+        <h2>5. Sharing with External Services</h2>
+
+        <p>
+          When a user invokes the App's sharing feature,
+          diagnosis text or images are sent to the social network,
+          messaging app, or other external service selected by the user.
+          This sharing occurs only through the user's explicit action.
+          After sharing, the information is handled in accordance with
+          the privacy policy of the selected external service.
+        </p>
+
+
+        <h2>6. Managing Permissions</h2>
+
+        <p>
+          Users can grant or revoke access to the camera and photo library
+          through their device settings.
+          If a permission is not granted,
+          the corresponding camera or image selection feature may be unavailable.
+        </p>
+
+
+        <h2>7. Contact Information</h2>
+
+        <p>
+          If a user contacts us by email or another method,
+          we use the user's email address and inquiry details only to respond to
+          and handle the inquiry.
+          We retain this information only as long as necessary to handle the inquiry
+          and delete it appropriately when it is no longer needed.
+        </p>
+
+
+        <h2>8. Changes to This Policy</h2>
+
+        <p>
+          We may update this Privacy Policy as necessary.
+          If we make important changes,
+          we will notify users within the App or on our website.
+        </p>
+
+
+        <h2>9. Business Information</h2>
+
+        <div class="company">
+          <strong>AKI Cyber Applications LLC</strong>
+
+          <p>
+            Contact:<br>
+            <a href="mailto:support@nuitalk.tokyo">
+              support@nuitalk.tokyo
+            </a>
+          </p>
+        </div>
+
+      </section>
+
+    </div>
+  </main>
+
+</body>
+</html>
