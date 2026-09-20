@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>頭の上に数字が浮かぶカメラ / NumUp プライバシーポリシー</title>
+
+  <meta
+    name="description"
+    content="「頭の上に数字が浮かぶカメラ（あたすう）」および「NumUp: Numbers Over Your Head」のプライバシーポリシーです。"
+  >
+
+  <style>
+    :root {
+      --bg: #f7f8fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --line: #e5e7eb;
+      --accent: #2563eb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        "Hiragino Sans",
+        "Hiragino Kaku Gothic ProN",
+        "Yu Gothic",
+        Meiryo,
+        Arial,
+        sans-serif;
+      line-height: 1.8;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px 80px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 32px;
+      margin-bottom: 32px;
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 2rem;
+      line-height: 1.4;
+    }
+
+    h2 {
+      margin-top: 2.2em;
+      padding-bottom: 0.4em;
+      border-bottom: 1px solid var(--line);
+      font-size: 1.35rem;
+    }
+
+    p,
+    li {
+      font-size: 1rem;
+    }
+
+    .date,
+    .company {
+      color: var(--muted);
+    }
+
+    a {
+      color: var(--accent);
+      word-break: break-all;
+    }
+
+    .language-link {
+      margin-bottom: 24px;
+    }
+
+    footer {
+      color: var(--muted);
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        padding: 20px 12px 60px;
+      }
+
+      .card {
+        padding: 22px 18px;
+        border-radius: 12px;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<main>
+
+  <div class="language-link">
+    <a href="#english">English</a>
+  </div>
+
+  <section class="card" id="japanese">
+    <h1>「頭の上に数字が浮かぶカメラ」プライバシーポリシー</h1>
+
+    <p class="date">
+      制定日：2026年9月8日<br>
+      最終更新日：2026年9月20日
+    </p>
+
+    <p class="company">
+      提供者：AKI電脳応用合同会社<br>
+      AKI Cyber Applications LLC
+    </p>
+
+    <p>
+      本プライバシーポリシーは、「頭の上に数字が浮かぶカメラ」
+      （アプリ一覧での名称「あたすう」。以下「本アプリ」）における
+      情報の取扱いを説明するものです。
+    </p>
+
+    <p>
+      本アプリを提供するAKI電脳応用合同会社
+      （AKI Cyber Applications LLC。以下「提供者」）は、
+      利用者のプライバシーを尊重し、以下の方針に従って本アプリを提供します。
+    </p>
+
+
+    <h2>1. 本アプリが取り扱う情報</h2>
+
+    <p>
+      本アプリは、機能の提供に必要な範囲で、次の情報を端末上で取り扱います。
+    </p>
+
+    <ul>
+      <li>
+        <strong>カメラ画像：</strong>
+        人物・犬・猫を検出し、数字を重ねた結果画像を作成するために使用します。
+        画像の解析は端末内で行われ、撮影画像や解析結果が提供者のサーバーへ
+        送信されることはありません。
+      </li>
+
+      <li>
+        <strong>写真ライブラリまたは選択したフォルダ：</strong>
+        作成した結果画像を、標準の写真ライブラリまたは利用者が選択した
+        フォルダへ保存するために使用します。
+        本アプリが保存先にある他のファイルを収集したり、
+        提供者へ送信したりすることはありません。
+      </li>
+
+      <li>
+        <strong>入力内容：</strong>
+        利用者が入力した「頭の上に浮かぶ数字の意味」は、
+        結果画面および保存・共有する画像に使用されます。
+        提供者のサーバーへ送信されることはありません。
+      </li>
+
+      <li>
+        <strong>アプリ設定：</strong>
+        選択した言語と、保存先フォルダの参照情報・表示名を端末内に保存します。
+      </li>
+    </ul>
+
+
+    <h2>2. Google ML Kitによる技術情報の取扱い</h2>
+
+    <p>
+      本アプリは、人物の顔を端末内で検出するためにGoogle ML Kitを使用します。
+      Googleの説明によると、入力画像および検出結果はGoogleのサーバーへ
+      送信されません。
+    </p>
+
+    <p>
+      一方、ML Kitは、修正情報・モデル更新・ハードウェア互換性情報の取得などのために
+      Googleのサーバーへ接続する場合があります。
+      また、診断および利用状況分析のため、端末・アプリ情報、
+      インストール単位の識別子、性能情報、API設定、入出力サイズ、
+      機能バージョン、イベント種別およびエラーコード等を
+      Googleへ送信する場合があります。
+    </p>
+
+    <p>
+      Googleによると、これらの情報は通信時に暗号化され、
+      第三者へ共有されません。
+    </p>
+
+    <ul>
+      <li>
+        ML Kitの規約とプライバシー：
+        <a href="https://developers.google.com/ml-kit/terms">
+          https://developers.google.com/ml-kit/terms
+        </a>
+      </li>
+
+      <li>
+        Googleプライバシーポリシー：
+        <a href="https://policies.google.com/privacy">
+          https://policies.google.com/privacy
+        </a>
+      </li>
+    </ul>
+
+
+    <h2>3. Google AdMobによる広告配信</h2>
+
+    <p>
+      本アプリは、メニュー画面にバナー広告を、
+      カメラ画面への移動前にインタースティシャル広告を表示します。
+      広告配信にはGoogle AdMobを使用します。
+    </p>
+
+    <p>
+      広告配信、効果測定、不正防止のため、
+      広告SDKはIPアドレス、端末の識別子、
+      アプリや広告の操作情報、診断情報などを収集し、
+      Googleその他の関係するサービス提供者へ送信または共有する場合があります。
+      IPアドレスから、おおよその位置が推定される場合があります。
+    </p>
+
+    <p>
+      撮影画像や、利用者が入力した文字列を
+      本アプリから広告SDKへ渡すことはありません。
+    </p>
+
+    <p>
+      必要な地域では、広告に関する同意画面を表示します。
+      同意内容を変更できる場合、
+      設定画面に「広告のプライバシー設定」が表示されます。
+    </p>
+
+    <p>
+      Googleによる広告関連情報の取扱い：
+      <a href="https://policies.google.com/technologies/ads">
+        https://policies.google.com/technologies/ads
+      </a>
+    </p>
+
+
+    <h2>4. 利用目的</h2>
+
+    <p>取り扱う情報は、次の目的に限って使用します。</p>
+
+    <ul>
+      <li>カメラ撮影、人物・犬・猫の検出、数字および文字の表示</li>
+      <li>結果画像の作成、端末への保存および利用者が選択したアプリへの共有</li>
+      <li>言語および保存先設定の維持</li>
+      <li>ML Kitの動作診断、保守、性能改善および不正利用の検出</li>
+      <li>AdMobによる広告配信、効果測定および不正防止</li>
+    </ul>
+
+
+    <h2>5. 第三者への送信・共有</h2>
+
+    <p>
+      提供者は、本アプリを通じて利用者の撮影画像、
+      入力内容または設定情報を収集、販売または第三者へ提供しません。
+    </p>
+
+    <p>
+      ただし、次の場合は利用者の操作または端末設定に基づいて、
+      外部サービスへ情報が渡ることがあります。
+    </p>
+
+    <ul>
+      <li>
+        共有ボタンを使用した場合、結果画像とハッシュタグが、
+        利用者が選択したSNS等のアプリへ渡されます。
+        以後の取扱いには、そのアプリの利用規約および
+        プライバシーポリシーが適用されます。
+      </li>
+
+      <li>
+        Googleフォト、iCloud写真、iCloud Driveまたは
+        他のクラウド保存先を選択した場合、
+        結果画像が各サービスへ保存または同期されることがあります。
+      </li>
+
+      <li>
+        Google ML Kitが、第2項に記載した技術情報を
+        Googleへ送信する場合があります。
+      </li>
+
+      <li>
+        Google AdMobが、第3項に記載した広告関連情報を
+        Googleその他の関係するサービス提供者へ送信または共有する場合があります。
+      </li>
+    </ul>
+
+
+    <h2>6. 端末の権限</h2>
+
+    <p>
+      本アプリは、カメラ機能のためにカメラ権限を、
+      結果画像の保存のために写真へのアクセス権限または
+      利用者が選択したフォルダへのアクセス権限を求めます。
+    </p>
+
+    <p>
+      権限は端末の設定からいつでも取り消せます。
+      権限を許可しない場合、対応する機能は利用できません。
+    </p>
+
+    <p>
+      本アプリは、マイク、位置情報、連絡先へのアクセスを行いません。
+    </p>
+
+
+    <h2>7. 保存期間と削除</h2>
+
+    <ul>
+      <li>
+        撮影・画像生成に使用する一時ファイルは端末内の一時領域で処理され、
+        処理後の削除またはOSによる一時領域の整理の対象となります。
+      </li>
+
+      <li>
+        写真ライブラリまたは選択したフォルダへ保存した結果画像は、
+        利用者が写真アプリやファイル管理アプリ等から削除するまで残ります。
+        クラウドへ保存・同期された画像については、
+        保存先サービスでも削除操作が必要となる場合があります。
+      </li>
+
+      <li>
+        言語および保存先フォルダの参照情報・表示名は、
+        利用者が変更するか、本アプリのデータを消去または
+        アンインストールするまで端末内に保存されます。
+      </li>
+
+      <li>
+        ML KitがGoogleへ送信する技術情報の保存期間および削除については、
+        Googleのプライバシーポリシーに従います。
+      </li>
+
+      <li>
+        Google AdMobによってGoogleその他の関係するサービス提供者へ
+        送信または共有される広告関連情報の保存期間および削除については、
+        Googleその他の該当するサービス提供者の
+        プライバシーポリシーに従います。
+      </li>
+    </ul>
+
+
+    <h2>8. 安全管理</h2>
+
+    <p>
+      提供者は、本アプリが取り扱う情報について、
+      不要な外部送信を行わず、端末の権限機構を利用するなど、
+      合理的な安全管理に努めます。
+    </p>
+
+    <p>
+      ただし、利用者が選択した共有先や端末のクラウド同期については、
+      各サービスの管理方針が適用されます。
+    </p>
+
+
+    <h2>9. 子どものプライバシー</h2>
+
+    <p>
+      本アプリは、提供者が子どもの個人情報を
+      意図的に収集する仕組みを備えていません。
+      保護者は、端末の権限、写真の保存先および共有先を
+      適切に管理してください。
+    </p>
+
+
+    <h2>10. 本ポリシーの変更</h2>
+
+    <p>
+      機能、利用するSDK、法令またはストア要件の変更等に応じて、
+      本ポリシーを変更することがあります。
+    </p>
+
+    <p>
+      重要な変更がある場合は、本アプリ内、
+      ストア掲載ページまたはその他の適切な方法でお知らせします。
+    </p>
+
+
+    <h2>11. お問い合わせ</h2>
+
+    <p>
+      本ポリシーまたは本アプリにおける情報の取扱いに関するお問い合わせは、
+      App StoreまたはGoogle Playのアプリ掲載ページに記載された
+      開発者連絡先からご連絡ください。
+    </p>
+  </section>
+
+
+  <div class="language-link">
+    <a href="#japanese">日本語</a>
+  </div>
+
+  <section class="card" id="english">
+    <h1>NumUp: Numbers Over Your Head – Privacy Policy</h1>
+
+    <p class="date">
+      Effective: September 8, 2026<br>
+      Last Updated: September 20, 2026
+    </p>
+
+    <p class="company">
+      Provider: AKI Cyber Applications LLC
+    </p>
+
+    <p>
+      This Privacy Policy explains how information is handled in
+      “NumUp: Numbers Over Your Head” (“the App”).
+    </p>
+
+    <p>
+      AKI Cyber Applications LLC (“Provider”) respects user privacy
+      and provides the App in accordance with this policy.
+    </p>
+
+
+    <h2>1. Information Handled by the App</h2>
+
+    <p>
+      The App handles the following information on your device
+      only as necessary to provide its features.
+    </p>
+
+    <ul>
+      <li>
+        <strong>Camera images:</strong>
+        Used to detect people, dogs, and cats and to create
+        result images with numbers overlaid.
+        Images are analyzed on the device.
+        Captured images and analysis results are not sent
+        to the Provider's servers.
+      </li>
+
+      <li>
+        <strong>Photo library or selected folder:</strong>
+        Used to save result images to the standard photo library
+        or a folder selected by the user.
+        The App does not collect other files from the destination
+        or send them to the Provider.
+      </li>
+
+      <li>
+        <strong>Text entered by the user:</strong>
+        The meaning entered for the numbers is used on the result screen
+        and in images that are saved or shared.
+        This text is not sent to the Provider's servers.
+      </li>
+
+      <li>
+        <strong>App settings:</strong>
+        The selected language and the reference information and display name
+        of the selected save-location folder are stored on the device.
+      </li>
+    </ul>
+
+
+    <h2>2. Technical Information Handled by Google ML Kit</h2>
+
+    <p>
+      The App uses Google ML Kit to detect human faces on the device.
+      According to Google, input images and detection results
+      are not sent to Google servers.
+    </p>
+
+    <p>
+      ML Kit may contact Google servers to receive bug fixes,
+      model updates, hardware accelerator compatibility information,
+      and similar technical information.
+    </p>
+
+    <p>
+      For diagnostics and usage analytics, ML Kit may also send
+      device and app information, a per-installation identifier,
+      performance information, API configuration, input and output sizes,
+      feature versions, event types, error codes, and similar technical data
+      to Google.
+    </p>
+
+    <p>
+      Google states that this information is encrypted in transit
+      and is not shared with third parties.
+    </p>
+
+    <ul>
+      <li>
+        ML Kit Terms &amp; Privacy:
+        <a href="https://developers.google.com/ml-kit/terms">
+          https://developers.google.com/ml-kit/terms
+        </a>
+      </li>
+
+      <li>
+        Google Privacy Policy:
+        <a href="https://policies.google.com/privacy">
+          https://policies.google.com/privacy
+        </a>
+      </li>
+    </ul>
+
+
+    <h2>3. Advertising with Google AdMob</h2>
+
+    <p>
+      The App displays Google AdMob banner advertisements on the menu screen
+      and interstitial advertisements before opening the camera screen.
+    </p>
+
+    <p>
+      For advertising, measurement, and fraud prevention,
+      the advertising SDK may collect IP addresses, device identifiers,
+      app and advertisement interactions, diagnostic information,
+      and similar data, and may transmit or share such information
+      with Google and other relevant service providers.
+    </p>
+
+    <p>
+      IP addresses may be used to estimate an approximate location.
+    </p>
+
+    <p>
+      The App does not provide camera images or text entered by the user
+      to the advertising SDK.
+    </p>
+
+    <p>
+      Where required, an advertising consent form is displayed.
+      When applicable, users may change their choices through
+      “Ad privacy choices” in the App's Settings screen.
+    </p>
+
+    <p>
+      Google's advertising privacy information:
+      <a href="https://policies.google.com/technologies/ads">
+        https://policies.google.com/technologies/ads
+      </a>
+    </p>
+
+
+    <h2>4. Purposes of Use</h2>
+
+    <p>Information is handled only for the following purposes:</p>
+
+    <ul>
+      <li>Taking photos and detecting people, dogs, and cats</li>
+      <li>Displaying numbers and text</li>
+      <li>Creating and saving result images</li>
+      <li>Sharing result images with an app selected by the user</li>
+      <li>Maintaining language and save-location settings</li>
+      <li>ML Kit diagnostics, maintenance, performance improvement, and abuse detection</li>
+      <li>AdMob advertising, measurement, and fraud prevention</li>
+    </ul>
+
+
+    <h2>5. Transmission and Sharing with Third Parties</h2>
+
+    <p>
+      The Provider does not collect, sell, or provide the user's
+      captured images, entered text, or App settings to third parties
+      through the App.
+    </p>
+
+    <p>
+      Information may nevertheless be transferred to an external service
+      based on the user's actions or device settings in the following cases:
+    </p>
+
+    <ul>
+      <li>
+        When the Share button is used, the result image and hashtags
+        are passed to the social media or other app selected by the user.
+        That service's terms and privacy policy then apply.
+      </li>
+
+      <li>
+        If Google Photos, iCloud Photos, iCloud Drive,
+        or another cloud destination is selected,
+        result images may be stored or synchronized by that service.
+      </li>
+
+      <li>
+        Google ML Kit may send Google the technical information
+        described in Section 2.
+      </li>
+
+      <li>
+        Google AdMob may transmit or share the advertising-related
+        information described in Section 3 with Google
+        and other relevant service providers.
+      </li>
+    </ul>
+
+
+    <h2>6. Device Permissions</h2>
+
+    <p>
+      The App requests camera permission to use the camera,
+      and either photo access or access to a folder selected by the user
+      to save result images.
+    </p>
+
+    <p>
+      These permissions can be revoked at any time through
+      the device's settings.
+      Features that require a denied permission will not be available.
+    </p>
+
+    <p>
+      The App does not access the microphone, precise location,
+      or contacts.
+    </p>
+
+
+    <h2>7. Retention and Deletion</h2>
+
+    <ul>
+      <li>
+        Temporary files used for capture and image generation
+        are processed in temporary storage on the device
+        and are deleted after processing or are subject to cleanup
+        by the operating system.
+      </li>
+
+      <li>
+        Result images saved to the photo library or a selected folder
+        remain until the user deletes them using a photo
+        or file-management application.
+        Images stored or synchronized in a cloud service may also
+        need to be deleted from that service separately.
+      </li>
+
+      <li>
+        Language settings and the selected folder's reference information
+        and display name remain on the device until they are changed,
+        the App's data is cleared, or the App is uninstalled.
+      </li>
+
+      <li>
+        Technical information sent by ML Kit is retained and deleted
+        in accordance with Google's Privacy Policy.
+      </li>
+
+      <li>
+        Advertising-related information transmitted or shared by Google AdMob
+        is retained and deleted in accordance with the privacy policies
+        of Google and other applicable service providers.
+      </li>
+    </ul>
+
+
+    <h2>8. Security</h2>
+
+    <p>
+      The Provider takes reasonable measures to protect information
+      handled by the App, including avoiding unnecessary external
+      transmissions and using the device's permission system.
+    </p>
+
+    <p>
+      Services selected by the user for sharing or cloud synchronization
+      are governed by their own security and privacy practices.
+    </p>
+
+
+    <h2>9. Children's Privacy</h2>
+
+    <p>
+      The App does not include a mechanism intended for the Provider
+      to knowingly collect children's personal information.
+    </p>
+
+    <p>
+      Parents and guardians should appropriately manage device permissions,
+      photo destinations, and sharing destinations.
+    </p>
+
+
+    <h2>10. Changes to This Policy</h2>
+
+    <p>
+      This policy may be updated when the App's features,
+      SDKs, applicable laws, or app-store requirements change.
+    </p>
+
+    <p>
+      Material changes will be announced through the App,
+      its store listing, or another appropriate method.
+    </p>
+
+
+    <h2>11. Contact</h2>
+
+    <p>
+      For questions regarding this Privacy Policy or
+      the App's handling of information,
+      please use the developer contact information listed
+      on the App's App Store or Google Play page.
+    </p>
+
+  </section>
+
+  <footer>
+    © 2026 AKI Cyber Applications LLC
+  </footer>
+
+</main>
+</body>
+</html>
