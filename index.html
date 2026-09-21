@@ -8,7 +8,7 @@
 
   <meta
     name="description"
-    content="AKI電脳応用合同会社は、スマートフォンアプリケーション及びWebサービスの企画、開発、運営を行う会社です。ぬいとーく、前世カメラ（Zense Camera）を開発・運営しています。"
+    content="AKI電脳応用合同会社は、スマートフォンアプリケーション及びWebサービスの企画、開発、運営を行う会社です。ぬいとーく、前世カメラ（Zense Camera）、頭の上に数字が浮かぶカメラ（あたすう / NumUp）を開発・運営しています。"
   />
 
   <style>
@@ -173,6 +173,11 @@
       background: #eee4fa;
     }
 
+    .badge.atasuu {
+      color: #075985;
+      background: #e0f2fe;
+    }
+
     ul {
       margin-bottom: 0;
       padding-left: 1.2em;
@@ -250,6 +255,24 @@
       background: #e2d2f4;
     }
 
+    .button.atasuu {
+      background: #0284c7;
+    }
+
+    .button.atasuu:hover {
+      background: #0369a1;
+    }
+
+    .button.atasuu-secondary {
+      color: #075985;
+      background: #e0f2fe;
+      border: 1px solid #bae6fd;
+    }
+
+    .button.atasuu-secondary:hover {
+      background: #bae6fd;
+    }
+
     footer {
       padding: 32px 20px;
       color: var(--muted);
@@ -314,8 +337,10 @@
 
       <p>
         当社は、AI・音声認識・音声合成技術を活用した会話アプリ
-        「ぬいとーく」や、撮影した対象の前世を診断する娯楽アプリ
-        「前世カメラ（Zense Camera）」を開発・運営しています。
+        「ぬいとーく」、撮影した対象の前世を診断する娯楽アプリ
+        「前世カメラ（Zense Camera）」、人物や犬・猫の頭上に数字を表示して楽しむ
+        ジョークカメラアプリ「頭の上に数字が浮かぶカメラ（あたすう / NumUp）」を
+        開発・運営しています。
       </p>
 
       <table>
@@ -450,6 +475,24 @@
         <div class="button-row">
           <a
             class="button zense"
+            href="https://apps.apple.com/jp/app/%E5%89%8D%E4%B8%96%E3%82%AB%E3%83%A1%E3%83%A9-zense-camera/id6799738405"
+            target="_blank"
+            rel="noopener"
+          >
+            App Store
+          </a>
+
+          <a
+            class="button secondary"
+            href="https://play.google.com/store/apps/details?id=com.akicyber.zensecamera&amp;hl=ja"
+            target="_blank"
+            rel="noopener"
+          >
+            Google Play
+          </a>
+
+          <a
+            class="button zense-secondary"
             href="/zense-camera/privacy/"
           >
             プライバシーポリシー
@@ -458,6 +501,48 @@
           <a
             class="button zense-secondary"
             href="/zense-camera/support/"
+          >
+            サポート
+          </a>
+        </div>
+      </article>
+
+      <!-- 頭の上に数字が浮かぶカメラ / あたすう -->
+      <article class="service-card">
+        <div class="badge atasuu">スマートフォンアプリ</div>
+
+        <div class="service-name">
+          頭の上に数字が浮かぶカメラ
+          <span class="service-name-en">あたすう / NumUp: Numbers Over Your Head</span>
+        </div>
+
+        <p>
+          「頭の上に数字が浮かぶカメラ（あたすう）」は、
+          カメラに映った人物・犬・猫を検出し、頭の上に数字を表示して楽しむ
+          ジョークカメラアプリです。
+        </p>
+
+        <p>
+          表示された数字に「○○した回数」など好きな意味を付けて、
+          結果画像として保存したり、SNSやメッセージアプリなどへ共有したりできます。
+        </p>
+
+        <p>
+          人物・犬・猫の検出や結果画像の生成は端末内で行われ、
+          撮影画像や解析結果が当社のサーバーへ送信されることはありません。
+        </p>
+
+        <div class="button-row">
+          <a
+            class="button atasuu"
+            href="/atasuu/privacy/"
+          >
+            プライバシーポリシー
+          </a>
+
+          <a
+            class="button atasuu-secondary"
+            href="/atasuu/support/"
           >
             サポート
           </a>
@@ -501,6 +586,18 @@
         <li>
           <a href="/zense-camera/support">
             前世カメラ サポート
+          </a>
+        </li>
+
+        <li>
+          <a href="/atasuu/privacy/">
+            頭の上に数字が浮かぶカメラ（あたすう） プライバシーポリシー
+          </a>
+        </li>
+
+        <li>
+          <a href="/atasuu/support/">
+            頭の上に数字が浮かぶカメラ（あたすう） サポート
           </a>
         </li>
 
